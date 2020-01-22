@@ -1,0 +1,6 @@
+name: GSUD
+version: 1.0.0
+author: Maurice Bailey
+main: at.mlps.gsud.main.Main
+
+commands:
