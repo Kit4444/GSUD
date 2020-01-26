@@ -22,7 +22,8 @@ public class Main extends JavaPlugin{
 		File mysqlfile = new File("plugins/GSUD/config.yml");
 		YamlConfiguration cfg = YamlConfiguration.loadConfiguration(mysqlfile);
 		mysql.lb.MySQL.connect(cfg.getString("MySQL.Host"), cfg.getString("MySQL.Port"), cfg.getString("MySQL.Database"), cfg.getString("MySQL.User"), cfg.getString("MySQL.Password"));
-		Updater.updater(0, 50);
+		Updater.updater(0, 100);
+		RestartClass.onRestart(0, 20);
 		regCMD();
 		regEvent();
 	}
